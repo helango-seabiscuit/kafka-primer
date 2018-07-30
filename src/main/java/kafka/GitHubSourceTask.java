@@ -1,9 +1,9 @@
 package kafka;
 
-import com.simplesteph.kafka.model.Issue;
-import com.simplesteph.kafka.model.PullRequest;
-import com.simplesteph.kafka.model.User;
-import com.simplesteph.kafka.utils.DateUtils;
+import kafka.model.Issue;
+import kafka.model.PullRequest;
+import kafka.model.User;
+import kafka.utils.DateUtils;
 import org.apache.kafka.connect.data.Struct;
 import org.apache.kafka.connect.source.SourceRecord;
 import org.apache.kafka.connect.source.SourceTask;
@@ -18,8 +18,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static com.simplesteph.kafka.GitHubSchemas.*;
-
+import static kafka.GitHubSchemas.*;
 
 public class GitHubSourceTask extends SourceTask {
     private static final Logger log = LoggerFactory.getLogger(GitHubSourceTask.class);

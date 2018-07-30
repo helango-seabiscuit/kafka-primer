@@ -14,13 +14,14 @@
  * limitations under the License.
  */
 
-package bbejeck.processor.purchases;
+//package bbejeck.processor.purchases;
+package processor.purchases;
 
-import bbejeck.model.Purchase;
-import bbejeck.model.PurchasePattern;
-import bbejeck.model.RewardAccumulator;
-import bbejeck.serializer.JsonDeserializer;
-import bbejeck.serializer.JsonSerializer;
+import model.Purchase;
+import model.PurchasePattern;
+import model.RewardAccumulator;
+import serializer.JsonDeserializer;
+import serializer.JsonSerializer;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.apache.kafka.common.serialization.StringSerializer;
 import org.apache.kafka.streams.KafkaStreams;
@@ -52,9 +53,9 @@ public class PurchaseProcessorDriver {
         TopologyBuilder topologyBuilder = new TopologyBuilder();
         topologyBuilder.addSource("SOURCE", stringDeserializer, purchaseJsonDeserializer, "src-topic")
 
-                .addProcessor("PROCESS", CreditCardAnonymizer::new, "SOURCE")
-                .addProcessor("PROCESS2", PurchasePatterns::new, "PROCESS")
-                .addProcessor("PROCESS3", CustomerRewards::new, "PROCESS")
+             //   .addProcessor("PROCESS", CreditCardAnonymizer::new, "SOURCE")
+               // .addProcessor("PROCESS2", PurchasePatterns::new, "PROCESS")
+                //.addProcessor("PROCESS3", CustomerRewards::new, "PROCESS")
 
                 .addSink("SINK", "patterns", stringSerializer, purchasePatternJsonSerializer, "PROCESS2")
                 .addSink("SINK2", "rewards",stringSerializer, rewardAccumulatorJsonSerializer, "PROCESS3")

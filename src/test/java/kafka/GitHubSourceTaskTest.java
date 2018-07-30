@@ -2,7 +2,7 @@ package kafka;
 
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.JsonNode;
-import com.simplesteph.kafka.model.Issue;
+import kafka.model.Issue;
 import org.json.JSONObject;
 import org.junit.Test;
 
@@ -11,7 +11,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-import static com.simplesteph.kafka.GitHubSourceConnectorConfig.*;
+import static kafka.GitHubSourceConnectorConfig.*;
 
 public class GitHubSourceTaskTest {
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package bbejeck.streams.twitter;
+package streams.twitter;
 
 import com.google.common.collect.Lists;
 import com.twitter.hbc.ClientBuilder;

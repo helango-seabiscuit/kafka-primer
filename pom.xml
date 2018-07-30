@@ -31,7 +31,36 @@
         <artifactId>kafka-streams</artifactId>
         <version>1.0.0</version>
     </dependency>
-    <dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.twitter/hbc-core -->
+        <dependency>
+            <groupId>com.twitter</groupId>
+            <artifactId>hbc-core</artifactId>
+            <version>2.2.0</version>
+        </dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.8.5</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.aliasi/lingpipe -->
+		<!-- https://mvnrepository.com/artifact/de.julielab/aliasi-lingpipe -->
+		<dependency>
+			<groupId>de.julielab</groupId>
+			<artifactId>aliasi-lingpipe</artifactId>
+			<version>4.1.0</version>
+		</dependency>
+
+
+		<dependency>
         <groupId>org.apache.kafka</groupId>
         <artifactId>connect-api</artifactId>
         <version>${kafka.version}</version>
@@ -82,8 +111,8 @@
                 <version>2.5.1</version>
                 <inherited>true</inherited>
                 <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
             <plugin>

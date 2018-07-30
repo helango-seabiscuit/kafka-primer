@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package bbejeck.processor.purchases;
+package processor.purchases;
 
-import bbejeck.model.Purchase;
+import model.Purchase;
 import org.apache.kafka.streams.processor.AbstractProcessor;
 
 /**

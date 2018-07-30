@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package bbejeck.processor.stocks;
+package processor.stocks;
 
-import bbejeck.model.StockTransaction;
-import bbejeck.model.StockTransactionSummary;
+import model.StockTransaction;
+import model.StockTransactionSummary;
 import org.apache.kafka.streams.processor.AbstractProcessor;
 import org.apache.kafka.streams.processor.ProcessorContext;
 import org.apache.kafka.streams.state.KeyValueIterator;

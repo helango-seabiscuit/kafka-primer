@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package bbejeck.model;
+package model;
 
 /**
  * User: Bill Bejeck

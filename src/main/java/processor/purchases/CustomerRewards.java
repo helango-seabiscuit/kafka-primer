@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package bbejeck.processor.purchases;
+package processor.purchases;
 
-import bbejeck.model.Purchase;
-import bbejeck.model.RewardAccumulator;
+import model.Purchase;
+import model.RewardAccumulator;
 import org.apache.kafka.streams.processor.AbstractProcessor;
 
 /**

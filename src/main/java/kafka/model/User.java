@@ -6,7 +6,6 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.simplesteph.kafka.GitHubSchemas.*;
 
 public class User {
 
@@ -313,10 +312,10 @@ public class User {
 
     public static User fromJson(JSONObject jsonObject) {
         User user = new User();
-        user.setUrl(jsonObject.getString(USER_URL_FIELD));
-        user.setHtmlUrl(jsonObject.getString(USER_HTML_URL_FIELD));
-        user.setId(jsonObject.getInt(USER_ID_FIELD));
-        user.setLogin(jsonObject.getString(USER_LOGIN_FIELD));
+//        user.setUrl(jsonObject.getString(USER_URL_FIELD));
+//        user.setHtmlUrl(jsonObject.getString(USER_HTML_URL_FIELD));
+//        user.setId(jsonObject.getInt(USER_ID_FIELD));
+        //user.setLogin(jsonObject.getString(USER_LOGIN_FIELD));
         return user;
     }
 }

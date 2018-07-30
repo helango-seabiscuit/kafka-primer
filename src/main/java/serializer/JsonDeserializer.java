@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package bbejeck.serializer;
+package serializer;
 
 import com.google.gson.Gson;
 import org.apache.kafka.common.serialization.Deserializer;

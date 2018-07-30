@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package bbejeck.nlp;
+package nlp;
 
 import com.aliasi.classify.Classification;
 import com.aliasi.classify.Classified;

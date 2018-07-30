@@ -5,7 +5,7 @@ import org.junit.Test;
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.simplesteph.kafka.GitHubSourceConnectorConfig.*;
+import static kafka.GitHubSourceConnectorConfig.*;
 import static org.junit.Assert.assertEquals;
 
 public class GitHubSourceConnectorTest {

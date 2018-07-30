@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package bbejeck.processor.stocks;
+package processor.stocks;
 
-import bbejeck.model.StockTransaction;
-import bbejeck.model.StockTransactionSummary;
-import bbejeck.serializer.JsonDeserializer;
-import bbejeck.serializer.JsonSerializer;
+import model.StockTransaction;
+import model.StockTransactionSummary;
+import serializer.JsonDeserializer;
+import serializer.JsonSerializer;
 import org.apache.kafka.common.serialization.Serde;
 import org.apache.kafka.common.serialization.Serdes;
 import org.apache.kafka.common.serialization.StringDeserializer;

@@ -14,7 +14,9 @@
  * limitations under the License.
  */
 
-package bbejeck.model;
+package model;
+
+import model.Purchase;
 
 import java.util.Date;
 

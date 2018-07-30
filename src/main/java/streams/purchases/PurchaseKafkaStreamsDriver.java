@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package bbejeck.streams.purchases;
+package streams.purchases;
 
-import bbejeck.model.Purchase;
-import bbejeck.model.PurchasePattern;
-import bbejeck.model.RewardAccumulator;
-import bbejeck.serializer.JsonDeserializer;
-import bbejeck.serializer.JsonSerializer;
+import model.Purchase;
+import model.PurchasePattern;
+import model.RewardAccumulator;
+import serializer.JsonDeserializer;
+import serializer.JsonSerializer;
 import org.apache.kafka.common.serialization.Serde;
 import org.apache.kafka.common.serialization.Serdes;
 import org.apache.kafka.common.serialization.StringDeserializer;

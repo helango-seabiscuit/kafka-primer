@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package bbejeck.streams.twitter;
+package streams.twitter;
 
 import bbejeck.model.Tweet;
-import bbejeck.nlp.Classifier;
-import bbejeck.serializer.JsonDeserializer;
-import bbejeck.serializer.JsonSerializer;
+import nlp.Classifier;
+import serializer.JsonDeserializer;
+import serializer.JsonSerializer;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.kafka.common.serialization.Serde;
 import org.apache.kafka.common.serialization.Serdes;
