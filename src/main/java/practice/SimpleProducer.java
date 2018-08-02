@@ -1,6 +1,7 @@
 package practice;
 
 
+import org.apache.kafka.clients.KafkaClient;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
@@ -34,6 +35,7 @@ public class SimpleProducer {
 		properties.setProperty("linger.ms","1");
 
 		Producer<String,String> producer = new KafkaProducer<String, String>(properties);
+
 
 		for (int i=0;i<8;i++){
 			ProducerRecord<String,String> producerRecord = new ProducerRecord<>(topicName,Integer.toString(i),"message "+i);
